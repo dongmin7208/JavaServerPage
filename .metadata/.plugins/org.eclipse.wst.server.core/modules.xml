@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:jspjdbc"/>
+  <module moduleId="org.eclipse.jst.jee.server:survey"/>
+  <module moduleId="org.eclipse.jst.jee.server:survey2" serverId="Tomcat v8.5 Server at localhost"/>
+</modules>

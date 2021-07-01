@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+section{
+	width:200px;
+	margin: auto;
+	left:0; top:0; right:0; bottom:0;
+}
+.loginTable{
+	width:200px;
+	text-align:center;
+	border-collapse:collapse;
+}
+.loginTable td {
+	text-align:left;
+	width:200px;
+	height:40px;
+}
+.loginTable td .id{
+	width:97%;
+}
+.loginTable .loginsubmit{
+	height:40px;
+	border: none;
+	text-align:center;
+}

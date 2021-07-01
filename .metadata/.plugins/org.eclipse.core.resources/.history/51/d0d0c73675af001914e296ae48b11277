@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>국영수</title>
+</head>
+<body>
+	<form method="POST" action="/calc.jsp">
+	<h4>국어점수</h4>
+	<label><input type="text" name="kor"></label><br>
+	<h4>영어점수</h4>
+	<label><input type="text" name="eng"></label><br>
+	<h4>수학점수</h4>
+	<label><input type="text" name="mat"></label><br>
+	
+	<input type="submit" value="전송">
+	
+</form>
+</body>
+</html>

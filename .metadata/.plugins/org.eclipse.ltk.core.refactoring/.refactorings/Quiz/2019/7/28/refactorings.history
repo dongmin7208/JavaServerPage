@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;ojdbc6_2.0.4.jar, tomcat-dbcp.jar&apos; to &apos;lib&apos;" description="Move 2 resources to &apos;lib&apos;" destination="WebContent/WEB-INF/lib" element1="/survey2/WebContent/WEB-INF/lib/ojdbc6_2.0.4.jar" element2="/survey2/WebContent/WEB-INF/lib/tomcat-dbcp.jar" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1562915483519" updateReferences="true"/>
+</session>

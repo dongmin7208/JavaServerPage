@@ -1,0 +1,42 @@
+package boardtwo.model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class BoardDao {
+	private static BoardDao instance = null;
+	private BoardDao() {}
+	public static BoardDao getInstance() {
+		if(instance == null) {
+			synchronized(BoardDao.class) {
+					instance = new BoardDao();
+			}
+		}
+		return instance;
+	}
+	//이제부터 여기에 게시판에서 메서드 추가
+	
+	public int getArticleCount() {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		int count = 0;
+		try {
+				conn = ConnUtil.getConnection();
+				pstmt = conn.prepareStatement("select count(*) from BOARD");
+				rs = pstmt.executeQuery();
+				if(rs.next()) {
+					count = rs.getInt(1);
+				}
+		} catch (Exception ex) {
+				ex.printStackTrace();
+		} finally {
+			if(rs != null) try {rs.close(); } catch(SQLException e) {}
+			if(pstmt != null) try {pstmt.close(); } catch(SQLException e) {}
+			if(conn != null) try {conn.close(); } catch(SQLException e) {}
+		}
+		return count;
+	}
+}

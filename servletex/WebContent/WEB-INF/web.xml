@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>servletex</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <!--  클라이언트에서 어떤 URL로 요청했을 때 어떤 서블릿으로 처리할 것인가 -->
+  <!--  서블릿 설정(선언) : 웹 컨테이너(톰캣)에게 객체로 생성하라 -->
+<!--  <servlet>
+  <servlet-name>now</servlet-name>
+  <servlet-class>servletex.NowServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>now</servlet-name>
+  	<url-pattern>/now</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>calc</servlet-name>
+  <servlet-class>servletex.NowServlet2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>calc</servlet-name>
+  	<url-pattern>/calc</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+  	<servlet-name>JDBCDriverLoader</servlet-name>
+  	<servlet-class>servletex.Loader</servlet-class>
+  	<init-param>
+  		<param-name>jdbcdriver</param-name>
+  		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  	</init-param>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+<!--   <servlet>
+  	<servlet-name>InitParamEx</servlet-name>
+  	<servlet-class>servletex.InitParamEx</servlet-class>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:oracle:thin:@192.168.44.128:1521:orcl</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>account</param-name>
+  		<param-value>c##tester2</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>1234</param-value>
+  	</init-param>
+  	<load-on-startup>2</load-on-startup>
+  	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InitParamEx</servlet-name>
+  	<url-pattern>/init</url-pattern>
+  </servlet-mapping> -->
+
+  
+
+<context-param>
+	<param-name>url</param-name>
+	<param-value>jdbc:oracle:thin:@192.168.44.128:1521:orcl</param-value>
+</context-param>
+  
+</web-app>

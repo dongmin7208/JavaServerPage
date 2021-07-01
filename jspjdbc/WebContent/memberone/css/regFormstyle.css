@@ -1,0 +1,28 @@
+@charset "UTF-8";
+section{
+	width:350px;
+	margin: auto;
+	left:0; top:0; right:0; bottom:0;
+}
+.regtable{
+	width:350px;
+	text-align:center;
+	border-collapse:collapse;
+}
+.regtable{
+	width:350px;
+	text-align:center;
+	border-collapse:collapse;
+}
+.regtable th{
+	height:50px;
+}
+.regtable td{
+	text-align:left;
+	height:40px;
+}
+.regtable .regsubmit{
+	height:30px;
+	border: none;
+	text-align:right;
+}

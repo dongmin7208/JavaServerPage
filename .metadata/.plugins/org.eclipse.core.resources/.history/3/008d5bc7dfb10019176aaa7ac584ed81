@@ -1,0 +1,5 @@
+package boardtwo.action.copy;
+
+public interface CommandAction {
+
+}

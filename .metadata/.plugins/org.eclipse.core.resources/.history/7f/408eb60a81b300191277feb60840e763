@@ -1,0 +1,5 @@
+package boardtwo.action;
+
+public class DeleteProAction {
+
+}

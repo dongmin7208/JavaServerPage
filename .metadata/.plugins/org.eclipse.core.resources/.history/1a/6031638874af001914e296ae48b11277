@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>국영수</title>
+</head>
+<body>
+	<form method="post" action="/calc">
+	<input type="text" name="kor"> <br>
+	<input type="text" name="eng"> <br>
+	<input type="text" name="mat"> <br>
+	
+	<input type="submit" value="전송">
+	
+</form>
+</body>
+</html>

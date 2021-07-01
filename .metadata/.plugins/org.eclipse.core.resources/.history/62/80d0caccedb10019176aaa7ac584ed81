@@ -1,0 +1,15 @@
+package boardtwo.model;
+
+public class BoardDao {
+	private static BoardDao instance = null;
+	private BoardDao() {}
+	public static BoardDao getInstance() {
+		if(instance == null) {
+			synchronized(BoardDao.class) {
+					instance = new BoardDao();
+			}
+		}
+		return instance;
+	}
+	//이제부터 여기에 게시판에서 메서드 추가
+}

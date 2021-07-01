@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+section{
+	width:200px;
+	margin: auto;
+	left:0; top:0; right:0; bottom:0;
+}
+.logininfo td a{
+	background-color: #add2da;
+	border:1px solid #8000ff;
+	border-radius:2px;
+	text-decoration:none;
+}

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Board</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/writeFormstyle.css" rel="stylesheet" type="text/css"/>
+<script src="script.js"></script>
+</head>
+
+<!--  //뒤에서 새글, 답변글 구분하는 코드를 추가할 부분<1> -->
+
+<body>
+<section>
+<b>글쓰기</b>
+<article>
+	<form method="post" name="writeForm" action="writeProc.jsp"
+										onsubmit="return writeSave()">
+	<table class="board">
+		<tr>
+			<td class="attr">이름</td>
+	</table>
+</article>
+</section>
+
+</body>
+</html>
